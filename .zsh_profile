@@ -1,0 +1,16 @@
+# ~/.zsh_profile
+
+# Path to dotfiles
+export DOTFILES="$HOME/.dotfiles"
+
+# Path to pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Setup editor, language vars, etc. (if needed)
+export EDITOR=nvim
+export LANG=en_US.UTF-8
+
+# From old .profile
+# . "$HOME/.cargo/env"
+# eval "$(pyenv init --path)"

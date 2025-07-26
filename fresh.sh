@@ -23,6 +23,11 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# Check for Cargo and install if we don't have it
+if test ! $(which cargo); then
+  /bin/bash -c "$(curl https://sh.rustup.rs -sSf | sh)"
+fi
+
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc

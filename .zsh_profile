@@ -7,6 +7,8 @@ export DOTFILES="$HOME/.dotfiles"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
+export XDG_CONFIG_HOME="$HOME/.dotfiles/"
+
 # Setup editor, language vars, etc. (if needed)
 export EDITOR=nvim
 export LANG=en_US.UTF-8

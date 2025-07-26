@@ -4,11 +4,12 @@ return {
 
     -- Colour theme
     {
-        "catppuccin/nvim",
-        name = "catppuccin",
+        "rebelot/kanagawa.nvim",
+        name = "kanagawa",
+        lazy = false,
         priority = 1000,
-        init = function()
-            vim.cmd.colorscheme("catppuccin-macchiato")
+        config = function()
+              vim.cmd("colorscheme kanagawa")
         end,
     },
 

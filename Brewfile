@@ -1,13 +1,33 @@
 # # Taps
+tap "buo/cask-upgrade"
+brew "mas"
+tap "buo/cask-upgrade"
+
 
 # Binaries
 brew 'bash' # Latest Bash version
-brew 'cat' # Used for spatie/visit
+brew 'bat' # Used for spatie/visit
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 # brew 'gh'
 brew 'git'
 brew 'grep'
+
+# Neovim
+brew  'neovim'
+brew 'starship'
+brew 'pyenv'
+brew 'zoxide'
+brew 'fzf'
+brew 'pyenv-virtualenv'
+
+# TODO
+brew 'tmux'
+
+# Raycast
+cask 'raycast'
+cask 'font-jetbrains-mono'
+
 
 # Spatie Medialibrary
 # brew 'jpegoptim'

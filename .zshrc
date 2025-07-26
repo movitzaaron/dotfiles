@@ -5,20 +5,7 @@
 
 # Setup Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="robbyrussell"  # or use starship if you prefer
-
-# plugins=(
-#   git
-#   github
-#   colored-man-pages
-#   zsh-syntax-highlighting
-#   zsh-autosuggestions
-#   pyenv
-# )
-#
-# fpath+=${ZSH_CUSTOM:-${ZSH}/custom}/plugins/zsh-completions/src
-#
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # Prompt (starship)
 eval "$(starship init zsh)"
@@ -35,15 +22,22 @@ setopt hist_save_no_dups
 setopt hist_ignore_space
 setopt hist_find_no_dups
 
+# Load local user configs
+# source $HOME/.dotfiles/.zsh_local
+
+# Load local user configs
+source $HOME/.dotfiles/.zsh_aliases
+
+# Load local user configs
+source $HOME/.dotfiles/.zsh_profile
+
 # Shell integrations
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-source ~/.cargo/env
 eval "$(zoxide init --cmd cd zsh)"
+source ~/.cargo/env
 source <(fzf --zsh)
 
-# Load local user configs
-[ -f ~/.zsh_local ] && source ~/.zsh_local
 
 # SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"

@@ -11,6 +11,7 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 # brew 'gh'
 brew 'git'
+brew 'gh'
 brew 'tree'
 brew 'grep'
 brew 'wget'
@@ -36,6 +37,7 @@ cask 'protonvpn'
 cask 'alacritty'
 cask 'bitwarden'
 cask 'font-jetbrains-mono-nerd-font'
+cask 'spotify'
 
 
 # Spatie Medialibrary

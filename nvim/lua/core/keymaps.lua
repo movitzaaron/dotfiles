@@ -27,13 +27,46 @@ local wk = require("which-key")
 
 wk.add({
     -- Groups
-    { "<leader>f",  group = "file" },
-    { "<leader>w",  group = "windows" },
-    { "<leader>b",  group = "buffers" },
+    { "<leader>f", group = "file" },
+    { "<leader>w", group = "windows" },
+    { "<leader>b", group = "buffers" },
 
     -- Clipboard
-    { "<leader>y",  '"+y',                                                                               desc = "Copy to clipboard",             mode = { "n", "v" } },
-    { "<leader>p",  '"+p',                                                                               desc = "Paste from clipboard",          mode = { "n", "v" } },
+    { "<leader>y", '"+y',            desc = "Copy to clipboard",    mode = { "n", "v" } },
+    { "<leader>p", '"+p',            desc = "Paste from clipboard", mode = { "n", "v" } },
+
+    -- Trouble
+    {
+        "<leader>xx",
+        "<cmd>Trouble diagnostics toggle<cr>",
+        desc = "Diagnostics (Trouble)",
+    },
+    {
+        "<leader>xX",
+        "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+        desc = "Buffer Diagnostics (Trouble)",
+    },
+    {
+        "<leader>cs",
+        "<cmd>Trouble symbols toggle focus=false<cr>",
+        desc = "Symbols (Trouble)",
+    },
+    {
+        "<leader>cl",
+        "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+        desc = "LSP Definitions / references / ... (Trouble)",
+    },
+    {
+        "<leader>xL",
+        "<cmd>Trouble loclist toggle<cr>",
+        desc = "Location List (Trouble)",
+    },
+    {
+        "<leader>xQ",
+        "<cmd>Trouble qflist toggle<cr>",
+        desc = "Quickfix List (Trouble)",
+    },
+
 
     -- Window movements
     { "<C-c>",      "<C-w>c",                                                                            desc = "Close window" },

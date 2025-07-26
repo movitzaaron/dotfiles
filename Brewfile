@@ -18,6 +18,7 @@ brew 'wget'
 brew 'ripgrep'
 brew 'fd'
 brew 'cmake'
+brew 'neofetch'
 
 # Neovim
 brew  'neovim'

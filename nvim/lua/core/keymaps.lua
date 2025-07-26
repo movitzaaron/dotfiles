@@ -80,12 +80,12 @@ wk.add({
     { "-",          ":lua require('oil').open()<CR>",                                                    desc = "Open Oil" }, -- Note: "-" is already used above, consider changing one of these
 
     -- Harpoon
-    { "<leader>a",  function() require("harpoon").list:add() end,                                        desc = "Add file to Harpoon list" },
+    { "<leader>a",  function() require("harpoon.mark").add_file() end,                                   desc = "Add file to Harpoon list" },
     { "<leader>A",  function() require("harpoon.ui").toggle_quick_menu() end,                            desc = "Toggle Harpoon menu" },
-    { "<leader>1",  function() require("harpoon").list:select(1) end,                                    desc = "Switch to Harpoon buffer 1" },
-    { "<leader>2",  function() require("harpoon").list:select(2) end,                                    desc = "Switch to Harpoon buffer 2" },
-    { "<leader>3",  function() require("harpoon").list:select(3) end,                                    desc = "Switch to Harpoon buffer 3" },
-    { "<leader>4",  function() require("harpoon").list:select(4) end,                                    desc = "Switch to Harpoon buffer 4" },
+    { "<leader>1",  function() require("harpoon.ui").nav_file(1) end,                                    desc = "Switch to Harpoon buffer 1" },
+    { "<leader>2",  function() require("harpoon.ui").nav_file(2) end,                                    desc = "Switch to Harpoon buffer 2" },
+    { "<leader>3",  function() require("harpoon.ui").nav_file(3) end,                                    desc = "Switch to Harpoon buffer 3" },
+    { "<leader>4",  function() require("harpoon.ui").nav_file(4) end,                                    desc = "Switch to Harpoon buffer 4" },
 
     -- Formatter
     { "<leader>fm", function() require("conform").format({ lsp_fallback = true, timeout_ms = 500 }) end, desc = "Format File" },

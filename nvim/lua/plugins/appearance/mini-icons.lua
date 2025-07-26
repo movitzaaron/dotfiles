@@ -1,1 +1,3 @@
-return { 'echasnovski/mini.nvim', version = '*' }
+return {
+    'echasnovski/mini.nvim', version = '*'
+}

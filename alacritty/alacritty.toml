@@ -6,7 +6,7 @@
 padding.x = 10
 padding.y = 10
 
-decorations = "Full"
+decorations = "none"
 # decorations_theme_variant = "Light" # "Dark"
 decorations_theme_variant = "Dark" # "Dark"
 

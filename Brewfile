@@ -13,6 +13,9 @@ brew 'ffmpeg'
 brew 'git'
 brew 'tree'
 brew 'grep'
+brew 'wget'
+brew 'ripgrep'
+brew 'fd'
 
 # Neovim
 brew  'neovim'
@@ -21,6 +24,7 @@ brew 'pyenv'
 brew 'zoxide'
 brew 'fzf'
 brew 'pyenv-virtualenv'
+brew 'node'
 
 # TODO
 brew 'tmux'
@@ -29,6 +33,7 @@ brew 'tmux'
 cask 'raycast'
 cask 'font-jetbrains-mono'
 cask 'protonvpn'
+cask 'alacritty'
 
 
 # Spatie Medialibrary

@@ -18,11 +18,6 @@ return
                     cond = symbols.has,
                 })
             end,
-            options = {
-                theme = "catppuccin-macchiato",
-                component_separators = '',
-                section_separators = { left = '', right = '' },
-            },
             sections = {
                 lualine_a = { { 'mode', separator = { left = '' }, right_padding = 2 } },
                 lualine_b = { 'filename', 'branch' },

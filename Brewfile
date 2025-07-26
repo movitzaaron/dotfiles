@@ -34,6 +34,8 @@ cask 'raycast'
 cask 'font-jetbrains-mono'
 cask 'protonvpn'
 cask 'alacritty'
+cask 'bitwarden'
+cask 'font-jetbrains-mono-nerd-font'
 
 
 # Spatie Medialibrary

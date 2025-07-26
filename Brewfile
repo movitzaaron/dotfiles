@@ -11,6 +11,7 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 # brew 'gh'
 brew 'git'
+brew 'tree'
 brew 'grep'
 
 # Neovim
@@ -27,6 +28,7 @@ brew 'tmux'
 # Raycast
 cask 'raycast'
 cask 'font-jetbrains-mono'
+cask 'protonvpn'
 
 
 # Spatie Medialibrary

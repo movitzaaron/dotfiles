@@ -1,18 +1,4 @@
-return {
-    -- Center pad
-    { 'smithbm2316/centerpad.nvim' },
-
-    -- Colour theme
-    {
-        "rebelot/kanagawa.nvim",
-        name = "kanagawa",
-        lazy = false,
-        priority = 1000,
-        config = function()
-              vim.cmd("colorscheme kanagawa")
-        end,
-    },
-
+return
     -- Lualine
     {
         'nvim-lualine/lualine.nvim',
@@ -60,15 +46,4 @@ return {
             tabline = {},
             extensions = {},
         }
-    },
-    {
-        "m4xshen/smartcolumn.nvim",
-        opts = {
-            disable_filetypes = { "NvimTree", "lazy", "mason", "help", "checkhealth", "lspinfo", "noice", "Trouble", "fish", "zsh", "leetcode" }
-        }
-    },
-    {
-        "j-hui/fidget.nvim",
-        opts = {},
     }
-}

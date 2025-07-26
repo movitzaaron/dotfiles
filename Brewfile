@@ -17,6 +17,7 @@ brew 'grep'
 brew 'wget'
 brew 'ripgrep'
 brew 'fd'
+brew 'cmake'
 
 # Neovim
 brew  'neovim'
@@ -38,6 +39,10 @@ cask 'alacritty'
 cask 'bitwarden'
 cask 'font-jetbrains-mono-nerd-font'
 cask 'spotify'
+cask 'dotnet-sdk'
+cask 'thunderbird'
+cask 'rectangle'
+cask 'flux-app'
 
 
 # Spatie Medialibrary

@@ -33,6 +33,7 @@ alias nuke="git clean -df && git reset --hard"
 alias pop="git stash pop"
 alias prune="git fetch --prune"
 alias pull="git pull"
+
 alias push="git push"
 alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
@@ -81,7 +82,8 @@ command -v sha1sum > /dev/null || alias sha1sum="shasum"
 # unset jscbin;
 
 # Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+# alias c="tr -d '\n' | pbcopy"
+alias c=clear
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

@@ -18,6 +18,8 @@ brew 'fd'
 brew 'cmake'
 brew 'neofetch'
 brew 'git-delta'
+brew 'syncthing'
+brew 'stow'
 
 # Terminal
 cask 'alacritty'
@@ -45,3 +47,4 @@ cask 'thunderbird'
 cask 'rectangle'
 cask 'flux-app'
 cask 'tailscale'
+cask 'obsidian'

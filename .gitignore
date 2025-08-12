@@ -1,4 +1,8 @@
-.ssh/*
+# Ignore everything in ssh/.ssh
+ssh/.ssh/*
+
+# Track only config
+!ssh/.ssh/config
 
 # Compiled source #
 ###################

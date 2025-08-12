@@ -1,0 +1,20 @@
+[user]
+    email = noraaztivom@gmail.com
+    name = Movitz Aaron
+
+[core]
+    pager = delta
+    editor = nvim
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+
+[merge]
+    conflictStyle = zdiff3
+
+[web]
+    browser = firefox

@@ -1,5 +1,7 @@
 #!usr/bin/zsh
 
+export PATH="/usr/local/bin:$PATH"
+
 # Setup Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh/"
 source "$ZSH/oh-my-zsh.sh"
@@ -26,11 +28,13 @@ source $HOME/.zsh_aliases
 source $HOME/.zsh_profile
 
 # Shell integrations
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 eval "$(zoxide init --cmd cd zsh)"
 source ~/.cargo/env
-source <(fzf --zsh)
+# source <(fzf)
 
 # SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -38,3 +42,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Fix backspace when using tmux
 [[ $- == *i* ]] && stty erase '^?'
+
+# Add neovim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
